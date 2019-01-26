@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         configToolbar();
 
         // Get reference to the RecyclerView
-        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        mRecyclerView = findViewById(R.id.recycler_view);
 
         // Configure Swipe Refresh Layout
         configSwipeRefresh();
@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
     private void configSwipeRefresh() {
 
-        mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe);
+        mSwipeRefreshLayout = findViewById(R.id.swipe);
         mSwipeRefreshLayout.setColorSchemeResources(android.R.color.holo_blue_bright,
                 android.R.color.holo_green_light,
                 android.R.color.holo_orange_light,
@@ -188,10 +188,6 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
                 List<Stores> storesList = response.body().getStores();
                 Log.v(getLocalClassName(), "" + storesList.size());
-                // Toast.makeText(getApplicationContext(), storesList.get(0).toString(), Toast.LENGTH_LONG).show();
-
-                /* In case of a swipe refresh clear the list if data is already present or it
-                will duplicate the data*/
 
                 if (mStoresList.size() > 0) {
                     mStoresList.clear();
@@ -226,7 +222,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
 
     public void configToolbar() {
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
     }

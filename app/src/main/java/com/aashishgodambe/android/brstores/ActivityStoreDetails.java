@@ -79,22 +79,22 @@ public class ActivityStoreDetails extends AppCompatActivity {
     }
 
     private void configView() {
-        textView_id = (TextView) findViewById(R.id.textview_detail_storeID);
-        textView_name = (TextView)findViewById(R.id.textview_detail_name);
-        textView_phone = (TextView)findViewById(R.id.textview_detail_phone);
-        textView_address = (TextView)findViewById(R.id.textview_detail_address) ;
-        textView_city = (TextView)findViewById(R.id.textview_detail_city);
-        textView_state = (TextView)findViewById(R.id.textview_detail_state);
-        textView_zipcode = (TextView)findViewById(R.id.textview_detail_zipcode);
-        textView_latitude = (TextView)findViewById(R.id.textview_detail_latitude);
-        textView_longitude = (TextView)findViewById(R.id.textview_detail_longitude);
-        imageView_logo = (ImageView) findViewById(R.id.imageView_detail);
+        textView_id = findViewById(R.id.textview_detail_storeID);
+        textView_name = findViewById(R.id.textview_detail_name);
+        textView_phone = findViewById(R.id.textview_detail_phone);
+        textView_address = findViewById(R.id.textview_detail_address) ;
+        textView_city = findViewById(R.id.textview_detail_city);
+        textView_state = findViewById(R.id.textview_detail_state);
+        textView_zipcode = findViewById(R.id.textview_detail_zipcode);
+        textView_latitude = findViewById(R.id.textview_detail_latitude);
+        textView_longitude = findViewById(R.id.textview_detail_longitude);
+        imageView_logo = findViewById(R.id.imageView_detail);
 
 
     }
 
     public void configToolbar() {
-        toolbar = (Toolbar)findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
