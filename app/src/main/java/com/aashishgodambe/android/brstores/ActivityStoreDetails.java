@@ -3,7 +3,7 @@ package com.aashishgodambe.android.brstores;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.transition.TransitionInflater;
 import android.util.Log;
@@ -14,7 +14,7 @@ import android.widget.TextView;
 import com.squareup.picasso.Picasso;
 
 
-public class ActivityStoreDetails extends ActionBarActivity {
+public class ActivityStoreDetails extends AppCompatActivity {
 
     private String address,city,name,latitude,zipcode,storeLogoURL,phone,longitude,storeID,state;
     private Toolbar toolbar;
